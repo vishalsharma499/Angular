@@ -1,0 +1,41 @@
+<div class="text-center mt-4">
+
+  <h1 class="heading mt-4 d-flex justify-content-center align-center">All Product List </h1>
+
+
+  <!-- <p class="productMessage">{{productMessage}}</p> -->
+
+</div>
+<!-- <div class="row"> -->
+  <div class="col-sm-12 ">
+    <div class="table-responsive text-center ">
+      <table class="table table-bordered table-striped mt-2">
+        <thead class="thead-light ">
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let item of productlist">
+            <td><img [src]="item.image" alt="{{ item.name }}" class="img-fluid"></td>
+            <td>{{ item.name | titlecase}}</td>
+            <td>{{ item.color | titlecase }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.category  | titlecase }}</td>
+            <td>{{ item.discription  | titlecase }}</td>
+            <td><fa-icon (click)="deleteProduct(item.id)" [icon]="icon" title="Delete "></fa-icon>
+              <a class="update-icon" routerLink="/seller-updata-product/{{item.id}}"><fa-icon
+                  [icon]="editIcon"  title="update "></fa-icon></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<!-- </div> -->

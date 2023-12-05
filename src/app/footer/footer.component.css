@@ -1,0 +1,83 @@
+.footerBg{
+    /* background-color: #E6E5DF !important; */
+    background-color:  #525963;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+
+}
+.list-unstyled  a{
+    text-decoration: none;
+    color: #0a6ed1 !important;
+}
+
+.list-unstyled a:hover{
+/* color: #0a6ed1 !important; */
+color: #fff !important;
+}
+
+.foot {
+    text-decoration: none;
+    color: #0a6ed1 !important;
+}
+
+.foot:hover{
+/* color: #0a6ed1 !important; */
+color: #fff !important;
+
+}
+
+.btn-floating {
+   height: 40px;
+   width: 40px;
+    border-color: #0a6ed1;
+    color:  #0a6ed1;
+}
+/* .btn-floating:hover{
+    border-color: #0a6ed1;
+} */
+
+.icons{
+    color: #0a6ed1;
+    border-color: #0a6ed1;
+}
+.searchcss{
+    color: #0a6ed1;
+    border-color: #0a6ed1;
+
+}
+.searchcss:hover {
+    background-color: #fff !important;
+}
+
+.underlined-text {
+    position: relative;
+  }
+  
+  .underlined-text::before {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 38%;
+    width: 24%;
+    height: 2px; 
+    background-color: #0a6ed1; 
+  }
+  .underlined-texthelp::before {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 41.5%;
+    width: 17.3%;
+    height: 2px; 
+    background-color: #0a6ed1; 
+  }
+  .underlined-textcon::before {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 18%;
+    width: 64%;
+    height: 2px; 
+    background-color: #0a6ed1; 
+  }
+
+  

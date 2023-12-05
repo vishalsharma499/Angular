@@ -1,0 +1,42 @@
+<div class="text-center mt-4">
+
+    <h1 class="heading mt-4 d-flex justify-content-center align-center">My Orders </h1>
+
+
+    <!-- <p class="productMessage">{{orderMsg}}</p> -->
+
+</div>
+<div class="row">
+<div class="col-sm-12 ">
+    <div class="table-responsive text-center ">
+        <table class="table table-bordered table-striped mt-2 text-center">
+            <thead class="thead-light text-center">
+                <tr>
+                    <th>Orders</th>
+                    <th>Order</th>
+                    <th>Price</th>
+                    <th>Status</th>
+
+                    <th>Cancel Order</th>
+                </tr>
+            </thead>
+            <tbody class="text-center" >
+                <tr *ngFor="let order of orderData" >
+                    <td><img src="https://img.freepik.com/free-psd/3d-render-illustration-shopping-cart-isolated-icon_439185-11702.jpg?size=626&ext=jpg" alt="ERROR" class="img-fluid"></td>
+                    <td>#{{order.id}}</td>
+                    <td>{{order.totalPrice}}</td>
+                    <td>In progress</td>
+                    <td>
+                        <button type="submit" (click)="cancelOrder(order.id)" class="btn btn-primary mt-3 btn-sm ">Cancel Order</button>
+                    </td>
+            
+              <!-- <td><fa-icon (click)="deleteProduct(item.id)" [icon]="icon"></fa-icon>
+                <a class="update-icon" routerLink="/seller-updata-product/{{item.id}}"><fa-icon
+                    [icon]="editIcon"></fa-icon></a> 
+               </td> -->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

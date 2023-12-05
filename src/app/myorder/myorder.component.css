@@ -1,0 +1,61 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  th, td {
+    padding: 8px;
+    /* text-align: left; */
+    border-bottom: 1px solid #ccc;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .productMessage{
+    color:green;
+}
+.update-icon{
+  margin-left: 25px;
+}
+
+
+
+
+/* Default table styles */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .table thead {
+    display: none; /* Hide the table header on small screens */
+  }
+
+  .table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .table td {
+    display: flex;
+    /* align-items: left; */
+    /* padding: 8px; */
+    /* border: none; */
+  }
+  
+  .table td:before {
+    content: attr(data-label); /* Use data-label to provide column label for accessibility */
+    font-weight: bold;
+    flex: 0 0 33%; /* Adjust based on the number of columns */
+  }
+}

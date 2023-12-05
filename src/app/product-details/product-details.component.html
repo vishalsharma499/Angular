@@ -1,0 +1,40 @@
+
+<div class="container" *ngIf="productData">
+    <h1 class="heading mt-4 d-flex justify-content-center align-center"> Item Details </h1>
+
+    <div class="row mt-4" >
+        <div class="col-sm-6 images">
+            <a routerLink="/details/{{productData.id}}">
+
+                <img src="{{productData.image}}" alt="error">
+            </a>
+        </div>
+    
+            <div class="card col-sm-6  ">
+                
+                <div class="card-header card-body bg-transparent  align-items-center justify-content-center ">
+                    <a routerLink="/details/{{productData.id}}"> <h3 class="card-title">{{productData.name}}</h3></a>
+                       
+                    <p class="card-text">Price : {{productData.price}}</p>
+                    <p >Color : {{productData.color}}<span [style.backgroundColor]="productData.color" class="productColor"></span></p>
+                    <p>Category : {{productData.category}}</p>
+                    <p>Discription : {{productData.discription}}</p>
+                
+                </div>
+                <div class="card-footer minMax">
+
+                <button (click)="handleQuantity('min')" class=" btn-sm">-</button>
+                <input type="text" value="{{productQuantity}}">
+                <button (click)="handleQuantity('max')" class=" btn-sm">+</button>
+                </div>
+                <div class="card-footer footerButton">
+                  
+                    <button *ngIf="!removeCart" (click)="addToCard()" class=" btn-sm">Add to Cart</button>
+                    <button *ngIf="removeCart" (click)="removeToCard(productData.id)" class=" btn-sm">Remove to Cart</button>
+                    <button class=" btn-sm">Buy Now</button>
+
+                </div>
+            </div>
+        </div>
+    
+</div>

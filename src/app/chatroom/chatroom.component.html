@@ -1,0 +1,42 @@
+<!-- <div class="chat-container " >
+    <div class="container">
+        <input type="checkbox" id="check">
+        <label class="chat-btn" for="check">
+            <i class="fa fa-commenting-o comment"></i>
+            <i class="fa fa-close close"></i> </label>
+        <div class="wrapper">
+            <div class="header ">
+                <h6>Let's Chat</h6>
+              
+            </div>
+            <div class="text-center p-2">
+                <span>Please fill out the form to start chat!</span>
+                
+            </div>
+            <div class="chat-form ">
+                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" placeholder="Email">
+                <textarea class="form-control" placeholder="Your Text Message"></textarea>
+                <button class="btn btn-success btn-block mt-3">Submit</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- chatroom.component.html -->
+
+<button class="open-button" (click)="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm" *ngIf="isFormOpen">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+  
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+  
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
+  </form>
+</div>
+
+
+  

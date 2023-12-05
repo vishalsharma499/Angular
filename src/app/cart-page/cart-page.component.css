@@ -1,0 +1,62 @@
+/* .row{
+    display: flex;
+} */
+
+.summry{
+    font-size: xx-large !important;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .productMessage{
+    color:green;
+}
+.update-icon{
+  margin-left: 25px;
+}
+
+.buttonn{
+  position: relative;
+  bottom: 16px;
+  color: #fff;
+}
+
+
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .tablee thead {
+    display: none; /* Hide the table header on small screens */
+  }
+
+  .tablee tbody tr {
+    display: block;
+    /* margin-bottom: 1rem; */
+    border-bottom: 2px solid #fff;
+  }
+
+  .tablee td {
+    display: flex;
+    
+  }
+  
+  .tablee td:before {
+    content: attr(data-label); 
+    flex: 0 0 33%; /* Adjust based on the number of columns */
+  }
+}

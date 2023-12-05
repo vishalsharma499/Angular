@@ -1,0 +1,66 @@
+<div class="text-center mt-4">
+
+    <h1 class="heading mt-4 d-flex justify-content-center align-center">Cart Page </h1>
+
+
+    <!-- <p class="productMessage">{{orderMsg}}</p> -->
+
+</div>
+<div class="container-fluid">
+    <div class="row mt-3 text-center ">
+        <div class="col-sm-8 ">
+            <div class="table-responsive">
+                <table class="tablee table-bordered table-striped mt-2">
+
+                    <tbody>
+                        <tr *ngFor="let item of cartData">
+                            <td><img [src]="item.image" alt="{{ item.name }}" class="img-fluid"></td>
+                            <td>Name : {{ item.name | titlecase }}</td>
+                            <td>Price : {{ item.price }}/- INR</td>
+                            <td>Quantity : {{ item.quantity }}</td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i> delete
+                                </button></td>
+                            <!-- <td>{{ item.discription }}</td> -->
+                            <!-- <td><fa-icon (click)="deleteProduct(item.id)" [icon]="icon"></fa-icon> -->
+                            <!-- <a class="update-icon" routerLink="/seller-updata-product/{{item.id}}"><fa-icon [icon]="editIcon"></fa-icon></a> -->
+                            <!-- </td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h4 class="heading summry mt-2 d-flex justify-content-center align-center">Products Summary </h4>
+
+            <table class="table table-bordered table-striped mt-2">
+                <tbody class="thead-light">
+                    <tr>
+                        <td>Amount :</td>
+                        <td>{{priceSummary.price}}/- INR</td>
+                    </tr>
+                    <tr>
+                        <td>Tax :</td>
+                        <td>{{priceSummary.tax}}/- INR</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery :</td>
+                        <td>{{priceSummary.delivery}}/- INR</td>
+                    </tr>
+                    <tr>
+                        <td>Discount :</td>
+                        <td>{{priceSummary.discount}}/- INR</td>
+                    </tr>
+                    <tr>
+                        <th>Total :</th>
+                        <th>{{priceSummary.total}}/- INR</th>
+                    </tr>
+                
+                </tbody>
+                
+                
+            </table>
+            <button type="button" (click)="checkout()" class="btn bg-primary btn-sm btn-block buttonn ">Check Out</button>
+        </div>
+
+    </div>
+</div>

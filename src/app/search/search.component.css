@@ -1,0 +1,43 @@
+
+.card{
+    background-color:  #E6E5DF;
+}
+.cards :hover{
+border-color: #0a6ed1;
+}
+.card-img, .card-img-top{
+
+   
+    object-fit: contain;
+    height: 230px;
+    padding: 10px 0 10px 0;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+   
+}
+.card-footer a{
+    text-decoration: none;
+}
+.card-header p{
+    display: flex;
+    justify-content: center;
+}
+.images img{
+    height: 400px;
+    width: 100%;
+    
+}
+.card-title{
+    color: #0a6ed1;
+    font-size:35px;
+}
+.card-header a{
+    text-decoration: none;
+}

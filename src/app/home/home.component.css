@@ -1,0 +1,32 @@
+
+.card{
+    background-color:  #E6E5DF;
+}
+.cards :hover{
+border-color: blue;
+}
+.card-img, .card-img-top{
+
+    /* background-color:  #E6E5DF; */
+    /* background: transparent; */
+/* mix-blend-mode:color-dodge; */
+
+    object-fit: contain;
+    height: 230px;
+    padding: 10px 0 10px 0;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+}
+.card-footer a{
+    text-decoration: none;
+}
+.card-header p{
+    display: flex;
+    justify-content: center;
+}
